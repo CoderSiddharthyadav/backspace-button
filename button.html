@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <style>
+          #result{
+              width: 300px;
+              height: 70px;
+              background-color: darkorange;
+              color:whitesmoke;
+              font-size: 30px;
+              font-weight: bold;
+              border: none;
+              border: 8px groove rgb(0, 255, 221);
+          }
+          #btn{
+              width: 250px;
+              background-color: red;
+              color: aqua;
+              font-size: 40px;
+              font-weight: bold;
+              border: 8px groove magenta;
+              margin-left: 24px;
+          }
+      </style>
+    
+  </head>
+  <body>
+    <input type="text"  id="result" placeholder="enter any number"><br>
+    <input type="button" value="Backspace" id="btn" onclick="back()">
+    <script>
+        function back(){ 
+            var x=document.getElementById('result').value;
+            document.getElementById('result').value=x.slice(0,x.length-1);
+        }
+    </script>
+  </body>
+</html>
